@@ -31,12 +31,9 @@ const App: React.FC = () => {
 
   return (
     <div className="flex flex-col h-full w-full bg-[#F2F2F7] text-slate-900 overflow-hidden relative">
-      {/* View Content */}
-      <div className="flex-1 overflow-hidden relative">
+      <div className="flex-1 overflow-hidden relative w-full h-full">
         {renderView()}
       </div>
-
-      {/* Mobile Tab Bar Navigation */}
       <TabBar currentView={currentView} setView={setCurrentView} />
     </div>
   );
