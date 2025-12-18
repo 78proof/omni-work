@@ -1,0 +1,7 @@
+{
+  "name": "OmniWork: AI Journal & Outlook Hub",
+  "description": "A comprehensive productivity app for Windows, combining Granola-style note-taking (voice and text) with seamless Outlook email/calendar integration and a powerful Gemini assistant.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
