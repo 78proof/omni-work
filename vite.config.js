@@ -4,7 +4,11 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/omni-work/', // Updated to match the GitHub repository name for subfolder deployment
+  base: '/omni-work/',
+  define: {
+    // This ensures process.env.API_KEY is available in the browser
+    'process.env': process.env
+  },
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
