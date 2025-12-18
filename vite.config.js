@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Ensures relative paths for GH Pages and Netlify
+  base: '/omni-work/', // Updated to match the GitHub repository name for subfolder deployment
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
